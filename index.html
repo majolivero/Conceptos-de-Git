@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos de Git</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div id="contenedor">
+        <h1 class="carter-one-regular">Conceptos de Git</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Menú</a>
+        <a href="#">Conócenos</a>
+        <a href="#">Contáctanos</a>
+    </nav>
+
+    <section id="section-1">
+        <h2>¿Qué es Git?</h2>
+        <p>Git (Son las siglas de, Global Information Tracker) es un sistema de control de versiones distribuido que te permite registrar los cambios que haces en tus archivos y volver a versiones anteriores si algo sale mal. 
+        Fue diseñado por Linus Torvalds para garantizar la eficiencia y confiabilidad del mantenimiento de versiones de aplicaciones que tienen un gran número de archivos de código fuente.</p>
+        <article>
+            <h2>Aspectos técnicos</h2>
+            <p><b>Programado en:</b>C(50%) , Bourne Shell(37.3%) , Perl(5.8%) , Tcl(4.1%) , Python(0.9%) , Makefile(0.8%) , Otros(1.1%)</p>
+            <p><b>Modelo de desarrollo:</b>Software Libre</p>
+        </article>
+        <article>
+            <h2>Características</h2>
+            <p>Git te ayuda a trabajar de manera más organizada y colaborativa en proyectos de desarrollo de software. Estas son algunas de sus principales características:</p>
+            <ul>
+                <li><b>Control de versiones:</b> Git almacena la información como un conjunto de archivos. Te permite llevar un registro de los cambios que haces en tus archivos, lo que significa que siempre puedes volver a versiones anteriores si algo sale mal.</li>
+                <li><b>Ramificación:</b> Puedes crear ramas en tu proyecto, lo que te permite trabajar en diferentes características o aspectos del mismo sin afectar el trabajo de los demás.</li>
+                <li><b>Colaboración:</b> En Git, varias personas pueden trabajar en diferentes aspectos del proyecto al mismo tiempo.</li>
+                <li><b>Seguridad:</b> No existen cambios, corrupción en archivos o cualquier alteración sin que Git lo sepa. Git cuenta con 3 estados en los que es posible localizar archivos: Staged, Modified y Committed.</li>
+                <li><b>Flexibilidad:</b> Casi todo en Git es local. Es difícil que se necesiten recursos o información externos, basta con los recursos locales con los que cuenta.</li>
+                <li><b>Comandos:</b>Git tiene una sintaxis de comandos bastante sencilla y fácil de aprender, lo que lo hace accesible incluso para principiantes en programación.</li>
+            </ul>
+        </article>
+        <aside>
+            <p>Nombre del autor:<cite>Platzi</cite></p>
+        </aside>
+    </section>
+
+    <section>
+        <h2>¿Qué es una rama?</h2>
+        <p>Una rama o branch es una versión del código del proyecto sobre el que estás trabajando. Estas ramas ayudan a mantener el orden en el control de versiones y manipular el código de forma segura.En otras palabras, un branch o rama en Git es una rama que proviene de otra. Imagina un árbol, que tiene una rama gruesa, y otra más fina, en la rama más gruesa tenemos los commits principales y en la rama fina tenemos otros commits que pueden ser de hotfix, development entre otros.</p>
+        <article>
+            <h2>Tipos de ramas</h2>
+            <ul>
+                <li><b>Rama main(Master):</b>Por defecto, el proyecto se crea en una rama llamada Main (anteriormente conocida como Master). Cada vez que añades código y guardas los cambios, estás haciendo un commit, que es añadir el nuevo código a una rama. Esto genera nuevas versiones de esta rama o branch, hasta llegar a la versión actual de la rama Main.</li>
+                <li><b>Rama developmet:</b>Cuando decides hacer experimentos, puedes generar ramas experimentales (usualmente llamadas development), que están basadas en alguna rama main, pero sobre las cuales puedes hacer cambios a tu gusto sin necesidad de afectar directamente al código principal.</li>
+                <li><b>Rama hotfix:</b>En otros casos, si encuentras un bug o error de código en la rama Main (que afecta al proyecto en producción), tendrás que crear una nueva rama (que usualmente se llaman bug fixing o hot fix) para hacer los arreglos necesarios. Cuando los cambios estén listos, los tendrás que fusionar con la rama Main para que los cambios sean aplicados. Para esto, se usa un comando llamado Merge, que mezcla los cambios de la rama que originaste a la rama Main.Todos los commits se aplican sobre una rama. Por defecto, siempre empezamos en la rama Main (pero puedes cambiarle el nombre si no te gusta) y generamos nuevas ramas, a partir de esta, para crear flujos de trabajo independientes.</li>
+            </ul>
+        </article>
+        <aside>
+            <p>Nombre del autor:<cite>Platzi</cite></p>
+        </aside>
+    </section>
+
+    <section>
+        <h2>¿Qué es GitHub?</h2>
+        <p>GitHub es una plataforma de alojamiento, propiedad de Microsoft, que ofrece a los desarrolladores la posibilidad de crear repositorios de código y guardarlos en la nube de forma segura, usando un sistema de control de versiones llamado Git.</p>
+        <p>Facilita la organización de proyectos y permite la colaboración de varios desarrolladores en tiempo real. Es decir, nos permite centralizar el contenido del repositorio para poder colaborar con los otros miembros de nuestra organización.</p>
+        <article>
+            <h2>Ventajas de GitHub</h2>
+            <p>Existe un gran número de razones que convierten a GitHub en una gran opción para el control y gestión de tus proyectos de código. Aquí algunas de ellas:</p>
+            <ul>
+                <li>GitHub permite que alojemos proyectos en repositorios de forma gratuita.</li>
+                <li>Te brinda la posibilidad de personalizar tu perfil en la plataforma.</li>
+                <li>Los repositorios son públicos por defecto. Sin embargo, GitHub te permite también alojar tus proyectos de forma privada.</li>
+                <li>Puedes crear y compartir páginas web estáticas con GitHub Pages.</li>
+                <li>Facilita compartir tus proyectos de una forma mucho más fácil y crear un portafolio.</li>
+                <li>Te permite colaborar para mejorar los proyectos de otros y a otros mejorar o aportar a los tuyos.</li>
+                <li>Ayuda reducir significativamente los errores humanos y escribir tu código más rápido con GitHub Copilot.</li>
+            </ul>
+        </article>
+        <aside>
+            <p>Nombre del autor:<cite>Platzi</cite></p>
+        </aside>
+    </section>
+
+    <section>
+        <h2>¿Qué es un repositorio?</h2>
+        <p>Un repositorio es un tipo de almacenamiento digital centralizado que los desarrolladores utilizan para realizar y administrar cambios en el código fuente de una aplicación. Los desarrolladores tienen que almacenar y compartir carpetas, archivos de texto y otros tipos de documentos al desarrollar software. Un repositorio cuenta con características que permiten a los desarrolladores rastrear con facilidad cambios en el código, editar archivos de manera simultánea y colaborar de forma eficiente en el mismo proyecto desde cualquier ubicación.</p>
+        <article>
+            <h2>¿Por qué es importante un repositorio?</h2>
+            <p>Un repositorio permite a los equipos de desarrollo de software aplicar múltiples cambios al código de un programa sin comprometer el código fuente principal. En lugar de aplicar los cambios directamente a la ramificación principal, utilizan características de un repositorio para editar y revisar los cambios. Esto reduce los conflictos de fusión cuando dos o más desarrolladores editan la misma parte del código.</p>
+            <p>Los desarrolladores también utilizan los repositorios para introducir nuevas características o corregir errores sin que ello afecte a la versión de producción de la aplicación. Crean una nueva ramificación, o copia del código fuente original, como repositorio local sobre el que trabajar. De este modo, los desarrolladores se aseguran de que los nuevos cambios se someten a las pruebas adecuadas antes de ponerlos a disposición de los clientes.</p>
+            <h2>Ventajas de los repositorios para las empresas</h2>
+            <p>Las empresas son más rápidas y responden mejor a las exigencias en constante evolución de los consumidores cuando utilizan repositorios para el desarrollo de aplicaciones. Los desarrolladores pueden trabajar rápidamente en características nuevas sin que ello afecte a la estabilidad de la aplicación en funcionamiento. Los repositorios permiten a los desarrolladores introducir cambios y resolver problemas potenciales con rapidez. Las organizaciones también pueden coordinar las tareas de desarrollo de aplicaciones entre desarrolladores que trabajan a distancia.</p>
+        </article>
+        <aside>
+            <p>Nombre del autor:<cite>Amazon Web Services</cite></p>
+        </aside>
+    </section>
+</body>
+</html>
